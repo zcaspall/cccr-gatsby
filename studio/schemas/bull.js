@@ -23,7 +23,7 @@ export default {
             name: 'bullEpd',
             title: 'Bull EPDs',
             type: 'file',
-            validation: required()
+            validation: rule => rule.required()
         }
     ],
 }
