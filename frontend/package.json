@@ -15,10 +15,12 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "classnames": "^2.3.1",
     "gatsby": "^3.13.0",
     "gatsby-plugin-image": "^1.13.0",
     "gatsby-source-sanity": "^7.0.7",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-headroom": "^3.1.1"
   }
 }

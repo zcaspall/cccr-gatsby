@@ -1,17 +1,16 @@
-import { useEffect, useContext} from 'react'
+import React, { useEffect, useContext} from 'react'
 import Headroom from 'react-headroom'
-import Link from 'gatsby'
+import { Link } from 'gatsby'
 import classNames from 'classnames'
-import MobileNavLinks from './MobileNavLinks/MobileNavLinks'
+import MobileNavLinks from '../MobileNavLinks/MobileNavLinks'
 import MobileNavContext from '../../context/MobileNavContext'
 import Logo from '../../images/Logo.svg'
-import MobileNavContext from '../../context/MobileNavContext'
 
 const Header = () => {
     const mobileNavContext = useContext(MobileNavContext);
 
     const active = classNames('mobile-menu', {
-        open: mobileNavOpen,
+        open: mobileNavContext.mobileNavOpen,
     });
 
     useEffect(() => {
@@ -28,7 +27,7 @@ const Header = () => {
         return () => {
             window.removeEventListener('resize', handleResize);
         };
-    }, []);
+    }, [mobileNavContext]);
     
     return(
         <>
