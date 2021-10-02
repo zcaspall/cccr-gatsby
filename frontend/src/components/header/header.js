@@ -5,6 +5,7 @@ import classNames from 'classnames'
 import MobileNavLinks from '../MobileNavLinks/MobileNavLinks'
 import MobileNavContext from '../../context/MobileNavContext'
 import Logo from '../../images/Logo.svg'
+import './Header.scss'
 
 const Header = () => {
     const mobileNavContext = useContext(MobileNavContext);

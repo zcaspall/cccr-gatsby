@@ -1,2 +1,10 @@
 @import '../../styles/colors.scss';
 
+.header-container {
+    display: flex;
+
+    .logo-container {
+        display: inline-block;
+        max-width: fit-content;
+    }
+}
