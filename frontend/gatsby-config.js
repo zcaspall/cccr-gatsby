@@ -10,5 +10,6 @@ module.exports = {
         dataset: "production",
       },
     },
+    'gatsby-plugin-sass',
   ],
 };
